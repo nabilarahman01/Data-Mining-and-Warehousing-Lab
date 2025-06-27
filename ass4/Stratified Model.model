@@ -1,0 +1,143 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.bayes.NaiveBayes " -B "weka.classifiers.rules.ZeroR " -B "weka.classifiers.trees.J48 -C 0.25 -M 2" -R MAJ
+Relation:     pima_diabetes-weka.filters.supervised.instance.StratifiedRemoveFolds-S0-N10-F1
+Instances:    77
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.bayes.NaiveBayes 
+	weka.classifiers.rules.ZeroR 
+	weka.classifiers.trees.J48 -C 0.25 -M 2
+using the 'Majority Voting' combination rule 
+
+All the models:
+
+Naive Bayes Classifier
+
+                         Class
+Attribute      tested_negative tested_positive
+                        (0.65)          (0.35)
+===============================================
+preg
+  mean                     3.02          4.3704
+  std. dev.              2.4371          3.5082
+  weight sum                 50              27
+  precision                   1               1
+
+plas
+  mean                 109.3376        137.9885
+  std. dev.             28.2365         24.5081
+  weight sum                 50              27
+  precision              2.5345          2.5345
+
+pres
+  mean                     69.2         70.0741
+  std. dev.             18.0533         15.4487
+  weight sum                 50              27
+  precision                   4               4
+
+skin
+  mean                    17.92         25.2346
+  std. dev.              13.203         17.1586
+  weight sum                 50              27
+  precision              2.3333          2.3333
+
+insu
+  mean                  67.2692        100.5983
+  std. dev.             81.8728        121.2456
+  weight sum                 50              27
+  precision             12.6923         12.6923
+
+mass
+  mean                  29.4468         35.8131
+  std. dev.              7.1439          7.9169
+  weight sum                 50              27
+  precision              0.9738          0.9738
+
+pedi
+  mean                   0.4617          0.6754
+  std. dev.              0.2618          0.4672
+  weight sum                 50              27
+  precision              0.0309          0.0309
+
+age
+  mean                   29.512         34.1679
+  std. dev.              9.1343          8.7717
+  weight sum                 50              27
+  precision              1.1333          1.1333
+
+
+ZeroR predicts class value: tested_negative
+J48 pruned tree
+------------------
+
+plas <= 122
+|   age <= 26: tested_negative (22.0)
+|   age > 26
+|   |   insu <= 200
+|   |   |   pres <= 78
+|   |   |   |   age <= 33: tested_positive (3.0)
+|   |   |   |   age > 33: tested_negative (10.0/2.0)
+|   |   |   pres > 78: tested_negative (7.0)
+|   |   insu > 200: tested_positive (2.0)
+plas > 122
+|   skin <= 16
+|   |   skin <= 0
+|   |   |   pres <= 72: tested_positive (4.0)
+|   |   |   pres > 72: tested_negative (5.0)
+|   |   skin > 0: tested_negative (4.0)
+|   skin > 16
+|   |   pres <= 68
+|   |   |   insu <= 130: tested_positive (2.0)
+|   |   |   insu > 130: tested_negative (4.0/1.0)
+|   |   pres > 68: tested_positive (14.0/1.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          63               81.8182 %
+Incorrectly Classified Instances        14               18.1818 %
+Kappa statistic                          0.5553
+Mean absolute error                      0.1818
+Root mean squared error                  0.4264
+Relative absolute error                 39.8272 %
+Root relative squared error             89.3571 %
+Total Number of Instances               77     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.980    0.481    0.790      0.980    0.875      0.601    0.749     0.788     tested_negative
+                 0.519    0.020    0.933      0.519    0.667      0.601    0.749     0.653     tested_positive
+Weighted Avg.    0.818    0.320    0.840      0.818    0.802      0.601    0.749     0.740     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 49  1 |  a = tested_negative
+ 13 14 |  b = tested_positive
+

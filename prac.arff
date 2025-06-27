@@ -1,0 +1,13 @@
+@relation nabila
+
+@attribute age real
+@attribute gender {male, female}
+@attribute blbla real
+@attribute dept {a, b, c}
+
+@data
+23, female, 3.5, a
+26, male, 8.3, a
+25, female, 4.6, c
+19, female, 9.1, b
+21, male, 12, b

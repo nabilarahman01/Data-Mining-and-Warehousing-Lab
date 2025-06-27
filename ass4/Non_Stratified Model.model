@@ -1,0 +1,129 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.Vote -S 1 -B "weka.classifiers.bayes.NaiveBayes " -B "weka.classifiers.rules.ZeroR " -B "weka.classifiers.trees.J48 -C 0.25 -M 2" -R MAJ
+Relation:     pima_diabetes-weka.filters.unsupervised.instance.RemoveFolds-S0-N10-F1
+Instances:    77
+Attributes:   9
+              preg
+              plas
+              pres
+              skin
+              insu
+              mass
+              pedi
+              age
+              class
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Vote combines the probability distributions of these base learners:
+	weka.classifiers.bayes.NaiveBayes 
+	weka.classifiers.rules.ZeroR 
+	weka.classifiers.trees.J48 -C 0.25 -M 2
+using the 'Majority Voting' combination rule 
+
+All the models:
+
+Naive Bayes Classifier
+
+                         Class
+Attribute      tested_negative tested_positive
+                        (0.58)          (0.42)
+===============================================
+preg
+  mean                   4.2611          5.5182
+  std. dev.              3.1679           3.451
+  weight sum                 45              32
+  precision              1.0833          1.0833
+
+plas
+  mean                 108.4632        138.1972
+  std. dev.              31.946          34.055
+  weight sum                 45              32
+  precision              3.3966          3.3966
+
+pres
+  mean                  66.9603         71.8192
+  std. dev.             22.1609         18.5111
+  weight sum                 45              32
+  precision              3.9286          3.9286
+
+skin
+  mean                  16.4138         23.0819
+  std. dev.             15.6136         16.8807
+  weight sum                 45              32
+  precision               2.069           2.069
+
+insu
+  mean                  52.2875        118.1426
+  std. dev.             80.8619        183.7578
+  weight sum                 45              32
+  precision             26.4375         26.4375
+
+mass
+  mean                  28.9882         33.8435
+  std. dev.              9.2902          8.1193
+  weight sum                 45              32
+  precision              0.6592          0.6592
+
+pedi
+  mean                   0.4581           0.588
+  std. dev.              0.3303          0.4645
+  weight sum                 45              32
+  precision              0.0299          0.0299
+
+age
+  mean                  32.5867         40.0098
+  std. dev.             10.7115         10.3386
+  weight sum                 45              32
+  precision              1.1143          1.1143
+
+
+ZeroR predicts class value: tested_negative
+J48 pruned tree
+------------------
+
+age <= 24: tested_negative (13.0)
+age > 24
+|   mass <= 28.9
+|   |   plas <= 159: tested_negative (16.0/1.0)
+|   |   plas > 159: tested_positive (2.0)
+|   mass > 28.9: tested_positive (46.0/17.0)
+
+Number of Leaves  : 	4
+
+Size of the tree : 	7
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances          58               75.3247 %
+Incorrectly Classified Instances        19               24.6753 %
+Kappa statistic                          0.4705
+Mean absolute error                      0.2468
+Root mean squared error                  0.4967
+Relative absolute error                 50.7609 %
+Root relative squared error            100.7945 %
+Total Number of Instances               77     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.889    0.438    0.741      0.889    0.808      0.486    0.726     0.723     tested_negative
+                 0.563    0.111    0.783      0.563    0.655      0.486    0.726     0.622     tested_positive
+Weighted Avg.    0.753    0.302    0.758      0.753    0.744      0.486    0.726     0.681     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 40  5 |  a = tested_negative
+ 14 18 |  b = tested_positive
+

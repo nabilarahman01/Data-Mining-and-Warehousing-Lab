@@ -1,0 +1,19 @@
+@relation weather-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-precision6
+
+@attribute outlook {sunny,overcast,rainy}
+@attribute temparature {'\'(-inf-66.4]\'','\'(66.4-68.8]\'','\'(68.8-71.2]\'','\'(71.2-73.6]\'','\'(73.6-76]\'','\'(76-78.4]\'','\'(78.4-80.8]\'','\'(80.8-83.2]\'','\'(83.2-85.6]\'','\'(85.6-inf)\''}
+@attribute humidity {'\'(-inf-68.1]\'','\'(68.1-71.2]\'','\'(71.2-74.3]\'','\'(74.3-77.4]\'','\'(77.4-80.5]\'','\'(80.5-83.6]\'','\'(83.6-86.7]\'','\'(86.7-89.8]\'','\'(89.8-92.9]\'','\'(92.9-inf)\''}
+@attribute windy {TRUE,FALSE}
+@attribute play {yes,no}
+
+@data
+sunny,'\'(83.2-85.6]\'','\'(83.6-86.7]\'',FALSE,no
+sunny,'\'(78.4-80.8]\'','\'(89.8-92.9]\'',TRUE,no
+overcast,'\'(80.8-83.2]\'','\'(83.6-86.7]\'',FALSE,yes
+rainy,'\'(68.8-71.2]\'','\'(92.9-inf)\'',FALSE,yes
+rainy,'\'(66.4-68.8]\'','\'(77.4-80.5]\'',FALSE,yes
+rainy,'\'(-inf-66.4]\'','\'(68.1-71.2]\'',TRUE,no
+overcast,'\'(-inf-66.4]\'','\'(-inf-68.1]\'',TRUE,yes
+overcast,'\'(71.2-73.6]\'','\'(89.8-92.9]\'',TRUE,yes
+sunny,'\'(73.6-76]\'','\'(83.6-86.7]\'',TRUE,no
+sunny,'\'(85.6-inf)\'','\'(89.8-92.9]\'',FALSE,no

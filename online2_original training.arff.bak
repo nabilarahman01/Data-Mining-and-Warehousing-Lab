@@ -1,0 +1,30 @@
+@relation EmployeeReviews
+
+@attribute years_experience real
+@attribute salary real
+@attribute department {HR, IT, Sales}
+@attribute education_level {High_School, Bachelors, Masters}
+@attribute performance {Excellent, Good, Poor}
+
+@data
+5.2, 70.5, IT, Bachelors, Good
+3.1, 50.0, HR, High_School, Poor
+7.5, 85.3, Sales, Masters, Excellent
+4.0, ?, IT, Bachelors, Good
+8.3, 95.2, Sales, Masters, Excellent
+2.7, 45.1, HR, High_School, Poor
+10.0, 110.0, IT, Masters, Excellent
+6.5, 75.8, Sales, Bachelors, Good
+4.8, ?, HR, Bachelors, Poor
+?, 80.2, IT, Masters, Excellent
+5.7, 65.3, Sales, High_School, Good
+9.2, 90.5, HR, Masters, Excellent
+3.9, 55.0, IT, Bachelors, Poor
+6.3, ?, Sales, Masters, Good
+7.1, 78.6, HR, Bachelors, Excellent
+4.5, 62.0, IT, High_School, Poor
+?, 68.4, Sales, Bachelors, Good
+8.8, 88.0, HR, Masters, Excellent
+2.5, 40.7, IT, High_School, Poor
+7.0, 82.1, Sales, Masters, Excellent
+

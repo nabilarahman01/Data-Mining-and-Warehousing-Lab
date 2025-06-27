@@ -1,0 +1,19 @@
+@relation weather
+
+@attribute outlook {sunny, overcast, rainy}
+@attribute temparature real
+@attribute humidity real
+@attribute windy {TRUE, FALSE}
+@attribute play {yes, no}
+
+@data
+sunny, 76, 83, FALSE, no
+rainy, 65, 72, FALSE, yes
+overcast, 77, 89, TRUE, yes
+sunny, 83, 94, TRUE, no
+rainy, 68, 81, TRUE, no
+sunny, 78, 87, FALSE, no
+overcast, 75, 86, FALSE, yes
+rainy, 63, 75, TRUE, yes
+sunny, 81, 90, TRUE, no
+overcast, 76, 88, TRUE, yes

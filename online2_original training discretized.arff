@@ -1,0 +1,39 @@
+@relation EmployeeReviews-weka.filters.unsupervised.attribute.NumericTransform-R2-Cjava.lang.Math-Mfloor-weka.filters.supervised.instance.SMOTE-C2-K5-P70.0-S1-weka.filters.supervised.instance.SMOTE-C3-K3-P160.0-S1-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-R1-2-precision6
+
+@attribute years_experience {'\'(-inf-3.25]\'','\'(3.25-4]\'','\'(4-4.75]\'','\'(4.75-5.5]\'','\'(5.5-6.25]\'','\'(6.25-7]\'','\'(7-7.75]\'','\'(7.75-8.5]\'','\'(8.5-9.25]\'','\'(9.25-inf)\''}
+@attribute salary {'\'(-inf-47]\'','\'(47-54]\'','\'(54-61]\'','\'(61-68]\'','\'(68-75]\'','\'(75-82]\'','\'(82-89]\'','\'(89-96]\'','\'(96-103]\'','\'(103-inf)\''}
+@attribute department {HR,IT,Sales}
+@attribute education_level {High_School,Bachelors,Masters}
+@attribute performance {Excellent,Good,Poor}
+
+@data
+'\'(-inf-3.25]\'','\'(47-54]\'',HR,High_School,Excellent
+'\'(7-7.75]\'','\'(82-89]\'',Sales,Masters,Excellent
+'\'(7.75-8.5]\'','\'(89-96]\'',Sales,Masters,Excellent
+'\'(9.25-inf)\'','\'(103-inf)\'',IT,Masters,Excellent
+'\'(5.5-6.25]\'','\'(75-82]\'',IT,Masters,Excellent
+'\'(8.5-9.25]\'','\'(89-96]\'',HR,Masters,Excellent
+'\'(3.25-4]\'','\'(54-61]\'',IT,Bachelors,Excellent
+'\'(7-7.75]\'','\'(75-82]\'',HR,Bachelors,Excellent
+'\'(8.5-9.25]\'','\'(82-89]\'',HR,Masters,Excellent
+'\'(6.25-7]\'','\'(75-82]\'',Sales,Masters,Excellent
+'\'(4.75-5.5]\'','\'(68-75]\'',IT,Bachelors,Good
+'\'(3.25-4]\'','\'(54-61]\'',IT,Bachelors,Good
+'\'(6.25-7]\'','\'(68-75]\'',Sales,Bachelors,Good
+'\'(5.5-6.25]\'','\'(61-68]\'',Sales,High_School,Good
+'\'(6.25-7]\'','\'(54-61]\'',Sales,Masters,Good
+'\'(5.5-6.25]\'','\'(61-68]\'',Sales,Bachelors,Good
+'\'(5.5-6.25]\'','\'(54-61]\'',Sales,Bachelors,Good
+'\'(4-4.75]\'','\'(54-61]\'',Sales,Bachelors,Good
+'\'(4-4.75]\'','\'(54-61]\'',Sales,Bachelors,Good
+'\'(5.5-6.25]\'','\'(54-61]\'',Sales,Bachelors,Good
+'\'(-inf-3.25]\'','\'(-inf-47]\'',Sales,High_School,Poor
+'\'(4.75-5.5]\'','\'(54-61]\'',HR,Bachelors,Poor
+'\'(4-4.75]\'','\'(61-68]\'',IT,High_School,Poor
+'\'(-inf-3.25]\'','\'(-inf-47]\'',IT,High_School,Poor
+'\'(-inf-3.25]\'','\'(-inf-47]\'',IT,High_School,Poor
+'\'(4-4.75]\'','\'(-inf-47]\'',IT,High_School,Poor
+'\'(4-4.75]\'','\'(61-68]\'',IT,High_School,Poor
+'\'(4-4.75]\'','\'(54-61]\'',IT,High_School,Poor
+'\'(-inf-3.25]\'','\'(47-54]\'',IT,High_School,Poor
+'\'(-inf-3.25]\'','\'(-inf-47]\'',IT,High_School,Poor

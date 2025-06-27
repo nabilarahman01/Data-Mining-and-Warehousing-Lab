@@ -1,0 +1,39 @@
+@relation EmployeeReviews-weka.filters.unsupervised.attribute.NumericTransform-R2-Cjava.lang.Math-Mfloor-weka.filters.supervised.instance.SMOTE-C2-K5-P70.0-S1-weka.filters.supervised.instance.SMOTE-C3-K3-P160.0-S1
+
+@attribute years_experience numeric
+@attribute salary numeric
+@attribute department {HR,IT,Sales}
+@attribute education_level {High_School,Bachelors,Masters}
+@attribute performance {Excellent,Good,Poor}
+
+@data
+5.2,70,IT,Bachelors,Good
+3.1,50,HR,High_School,Excellent
+7.5,85,Sales,Masters,Excellent
+4,56,IT,Bachelors,Good
+8.3,95,Sales,Masters,Excellent
+2.7,45,Sales,High_School,Poor
+10,110,IT,Masters,Excellent
+6.5,75,Sales,Bachelors,Good
+4.8,56,HR,Bachelors,Poor
+5.55,80,IT,Masters,Excellent
+5.7,65,Sales,High_School,Good
+9.2,90,HR,Masters,Excellent
+3.9,55,IT,Bachelors,Excellent
+6.3,56,Sales,Masters,Good
+7.1,78,HR,Bachelors,Excellent
+4.5,62,IT,High_School,Poor
+5.55,68,Sales,Bachelors,Good
+8.8,88,HR,Masters,Excellent
+2.5,40,IT,High_School,Poor
+7,82,Sales,Masters,Excellent
+5.565989,56.451417,Sales,Bachelors,Good
+4.381841,59.031983,Sales,Bachelors,Good
+4.132013,57.195439,Sales,Bachelors,Good
+5.751622,57.434056,Sales,Bachelors,Good
+2.658457,43.336415,IT,High_School,Poor
+4.192553,46.680098,IT,High_School,Poor
+4.51804,61.68317,IT,High_School,Poor
+4.646126,56.516223,IT,High_School,Poor
+3.088114,51.14264,IT,High_School,Poor
+2.607852,42.916769,IT,High_School,Poor

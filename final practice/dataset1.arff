@@ -1,0 +1,13 @@
+@relation nabila
+
+@attribute name{n, a, b}
+@attribute age numeric
+@attribute height 
+@attribute weight
+
+@data
+n, 23, 34, 66
+a, 22, 45.5, 56
+b, 21, 39.5, 55
+a, 34, 23.5, 24
+n, 33, 45, 33

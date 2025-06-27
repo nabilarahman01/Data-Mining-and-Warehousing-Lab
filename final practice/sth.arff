@@ -1,0 +1,37 @@
+@relation 'EmployeeReviews-weka.filters.unsupervised.attribute.NumericTransform-R2-Cjava.lang.Math-Mfloor-weka.filters.supervised.instance.SMOTE-C2-K5-P70.0-S1-weka.filters.supervised.instance.SMOTE-C3-K3-P150.0-S1-weka.filters.unsupervised.attribute.Remove-R3,4'
+
+@attribute years_experience numeric
+@attribute salary numeric
+@attribute performance {Excellent,Good,Poor}
+
+@data
+2.5,40,Poor
+2.7,45,Poor
+3.1,50,Excellent
+3.9,55,Excellent
+4.5,62,Poor
+5.7,65,Good
+5,68,Good
+5.2,70,Good
+6.5,75,Good
+7.1,78,Excellent
+5,80,Excellent
+7,82,Excellent
+7.5,85,Excellent
+8.8,88,Excellent
+9.2,90,Excellent
+8.3,95,Excellent
+10,110,Excellent
+4,55,Good
+4.8,55,Poor
+6.3,55,Good
+5.134381,55.322441,Good
+5.198557,65.925485,Good
+6.241914,55.943768,Good
+5.553737,56.593396,Good
+2.541543,41.663585,Poor
+4.134701,42.291043,Poor
+2.512027,40.264025,Poor
+4.646126,55.60226,Poor
+4.123669,47.402746,Poor
+4.638222,59.083477,Poor
